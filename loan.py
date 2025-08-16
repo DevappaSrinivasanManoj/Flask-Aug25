@@ -11,7 +11,7 @@ with open('classifier.pkl', 'rb') as f:
 @app.route("/", methods=['GET'])
 def hello():
 
-    return "<h1> Loan Approval Application! V2</h1>"
+    return "<h1> Loan Approval Application! V2 </h1>"
 
 @app.route("/predict", methods=['GET'])
 def predict():
@@ -50,5 +50,5 @@ def predict_post():
 
 
 @app.route("/carpredict", methods=['GET'])
-def predict():
+def predict_car():
     return "<h1> Predict the car price </h1>"
